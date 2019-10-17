@@ -27,6 +27,10 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TelcoProyectoWebSite", "Tel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{4D4F5B3D-9114-4932-AEA2-E57DF30AF921}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{02351BCA-FE5B-4696-8C50-BFC62FC8275A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MODELS", "MODELS\MODELS.csproj", "{1C8A83FC-75EF-48D7-BAD4-C649E80B3368}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,14 @@ Global
 		{4D4F5B3D-9114-4932-AEA2-E57DF30AF921}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D4F5B3D-9114-4932-AEA2-E57DF30AF921}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D4F5B3D-9114-4932-AEA2-E57DF30AF921}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02351BCA-FE5B-4696-8C50-BFC62FC8275A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02351BCA-FE5B-4696-8C50-BFC62FC8275A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02351BCA-FE5B-4696-8C50-BFC62FC8275A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02351BCA-FE5B-4696-8C50-BFC62FC8275A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C8A83FC-75EF-48D7-BAD4-C649E80B3368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C8A83FC-75EF-48D7-BAD4-C649E80B3368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C8A83FC-75EF-48D7-BAD4-C649E80B3368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C8A83FC-75EF-48D7-BAD4-C649E80B3368}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
