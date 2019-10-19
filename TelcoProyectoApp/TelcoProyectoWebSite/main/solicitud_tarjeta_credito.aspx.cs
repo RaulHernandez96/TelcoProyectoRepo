@@ -26,6 +26,7 @@ public partial class main_solicitud_tarjeta_credito : System.Web.UI.Page
         sqlcomm.Parameters.AddWithValue("@pIdSolicitud", txtid_financiera.Text.Trim());
         sqlcomm.Parameters.AddWithValue("@pIdCliente", txtDPI_cliente.Text.Trim());
         sqlcomm.Parameters.AddWithValue("@pIdTipoCredito", txtTipo_credito.Text.Trim());
+        sqlcomm.Parameters.AddWithValue("@pId_tipo_tarjeta", txtTipo_tarjeta.Text.Trim());
         sqlcomm.Parameters.AddWithValue("@pIdTipoEntrega", txtTipo_entrega.Text.Trim());
         sqlcomm.Parameters.AddWithValue("@pIdTipoDesembolso", txtTipo_desembolso.Text.Trim());
         sqlcomm.Parameters.AddWithValue("@pLimite", txtlimite.Text.Trim());
