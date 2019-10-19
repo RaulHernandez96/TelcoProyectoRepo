@@ -16,22 +16,22 @@ public partial class main_solicitud_tarjeta_credito : System.Web.UI.Page
 
     protected void btnInsertar_Click(object sender, EventArgs e)
     {
+        string pIdSolicitud_tarjeta_credito;
+        pIdSolicitud_tarjeta_credito ="";
         if (conn.State == System.Data.ConnectionState.Closed)
             conn.Open();
-        SqlCommand sqlcomm = new SqlCommand("[dbo].[PRC_CREA_SOLICITUD_CREDITO]", conn);
+        SqlCommand sqlcomm = new SqlCommand("[dbo].[PRC_CREA_SOLICITUD_TARJETA]", conn);
         sqlcomm.CommandType = System.Data.CommandType.StoredProcedure;
-        sqlcomm.Parameters.AddWithValue("@pIdSolicitud", txtid_financiera.Text.Trim());
+        sqlcomm.Parameters.AddWithValue("@pIdSolicitud_tarjeta_credito", pIdSolicitud_tarjeta_credito);
         sqlcomm.Parameters.AddWithValue("@pIdSolicitud", txtid_financiera.Text.Trim());
         sqlcomm.Parameters.AddWithValue("@pIdCliente", txtDPI_cliente.Text.Trim());
         sqlcomm.Parameters.AddWithValue("@pIdTipoCredito", txtTipo_credito.Text.Trim());
         sqlcomm.Parameters.AddWithValue("@pIdTipoEntrega", txtTipo_entrega.Text.Trim());
         sqlcomm.Parameters.AddWithValue("@pIdTipoDesembolso", txtTipo_desembolso.Text.Trim());
-        sqlcomm.Parameters.AddWithValue("@pCapital", txtCapital.Text.Trim());
-        sqlcomm.Parameters.AddWithValue("@pPlazo", txtPlazo.Text.Trim());
-        sqlcomm.Parameters.AddWithValue("@pGarantia", txtGarantia.Text.Trim());
-        sqlcomm.Parameters.AddWithValue("@pUtilidadDinero", txtUtilidad_dinero.Text.Trim());
+        sqlcomm.Parameters.AddWithValue("@pLimite", txtlimite.Text.Trim());
         sqlcomm.Parameters.AddWithValue("@pHistorialCompra", txtHistorial_compras.Text.Trim());
-        sqlcomm.Parameters.AddWithValue("@pProyeccionPago", txtProyeccion.Text.Trim());
+        sqlcomm.Parameters.AddWithValue("@pEstado", txtEstado_autorizacion.Text.Trim());
+        sqlcomm.Parameters.AddWithValue("@pIdCategoria_tarjeta", txtCategoria_tarjeta.Text.Trim());
         sqlcomm.ExecuteNonQuery();
         conn.Close();
         if (int.Parse(txtid_financiera.Text.Trim()) == 0)
