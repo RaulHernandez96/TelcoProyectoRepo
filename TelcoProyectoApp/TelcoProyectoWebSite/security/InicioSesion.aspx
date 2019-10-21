@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="InisioSesion.aspx.cs" Inherits="security_Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="InicioSesion.aspx.cs" Inherits="security_Default" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,7 +68,7 @@
         </div>
         <div class="col-xs-4">
           <%--<button type="submit" class="btn btn-primary btn-block btn-flat">Ingresar</button>--%>
-          <asp:Button ID="_btInicioSesion" CssClass="btn btn-primary btn-block btn-flat" Text="Ingresar" runat="server" />
+          <asp:Button ID="_btInicioSesion" CssClass="btn btn-primary btn-block btn-flat" Text="Ingresar" runat="server" OnClick="_btInicioSesion_Click" />
         </div>
         <!-- /.col -->
       </div>
