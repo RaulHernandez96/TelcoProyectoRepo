@@ -15,5 +15,6 @@ namespace MODELS
         public string usuario { get; set; }
         public string contrasenia { get; set; }
         public string deBaja { get; set; }
+        public MCliente cliente { get; set; }
     }
 }
