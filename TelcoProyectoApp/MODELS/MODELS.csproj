@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CLASEPRUEBA.cs" />
     <Compile Include="MCliente.cs" />
     <Compile Include="MCuenta.cs" />
     <Compile Include="MLogin.cs" />
