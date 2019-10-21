@@ -43,6 +43,7 @@
             <asp:TextBox ID="txtFecha" runat="server"></asp:TextBox>
             <br />
             <asp:Button ID="btnInsertar" runat="server" Text="Crear Solicitud" OnClick="btnInsertar_Click" />
+            prueba
         </div>
     
 </asp:Content>
