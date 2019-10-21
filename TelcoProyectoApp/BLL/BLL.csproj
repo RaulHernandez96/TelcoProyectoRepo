@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLLConsultaCuentaDetalle.cs" />
+    <Compile Include="BLLConsultaCuentaEncabezado.cs" />
     <Compile Include="BLLLogin.cs" />
     <Compile Include="BLLSolitudPrestamo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

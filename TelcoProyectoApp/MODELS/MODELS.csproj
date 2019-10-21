@@ -41,7 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MCliente.cs" />
+    <Compile Include="MCuenta.cs" />
     <Compile Include="MLogin.cs" />
+    <Compile Include="MMovimientoCuenta.cs" />
     <Compile Include="MSolicitudPrestamo.cs" />
     <Compile Include="MUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

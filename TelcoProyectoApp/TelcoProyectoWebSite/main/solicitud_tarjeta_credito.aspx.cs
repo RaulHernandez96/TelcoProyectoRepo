@@ -22,8 +22,7 @@ public partial class main_solicitud_tarjeta_credito : System.Web.UI.Page
             conn.Open();
         SqlCommand sqlcomm = new SqlCommand("[dbo].[PRC_CREA_SOLICITUD_TARJETA]", conn);
         sqlcomm.CommandType = System.Data.CommandType.StoredProcedure;
-        sqlcomm.Parameters.AddWithValue("@pIdSolicitud_tarjeta_credito", pIdSolicitud_tarjeta_credito);
-        sqlcomm.Parameters.AddWithValue("@pIdSolicitud", txtid_financiera.Text.Trim());
+        sqlcomm.Parameters.AddWithValue("@pIdFinanciera", txtid_financiera.Text.Trim());
         sqlcomm.Parameters.AddWithValue("@pIdCliente", txtDPI_cliente.Text.Trim());
         sqlcomm.Parameters.AddWithValue("@pIdTipoCredito", txtTipo_credito.Text.Trim());
         sqlcomm.Parameters.AddWithValue("@pId_tipo_tarjeta", txtTipo_tarjeta.Text.Trim());
