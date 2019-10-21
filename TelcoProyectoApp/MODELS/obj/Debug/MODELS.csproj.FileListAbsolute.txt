@@ -1,0 +1,5 @@
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\MODELS\bin\Debug\MODELS.dll
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\MODELS\bin\Debug\MODELS.pdb
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\MODELS\obj\Debug\MODELS.csprojAssemblyReference.cache
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\MODELS\obj\Debug\MODELS.dll
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\MODELS\obj\Debug\MODELS.pdb

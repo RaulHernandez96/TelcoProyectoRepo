@@ -1,0 +1,10 @@
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\BLL\bin\Debug\BLL.dll
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\BLL\bin\Debug\BLL.pdb
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\BLL\bin\Debug\DAO.dll
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\BLL\bin\Debug\MODELS.dll
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\BLL\bin\Debug\DAO.pdb
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\BLL\bin\Debug\MODELS.pdb
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\BLL\obj\Debug\BLL.dll
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\BLL\obj\Debug\BLL.pdb

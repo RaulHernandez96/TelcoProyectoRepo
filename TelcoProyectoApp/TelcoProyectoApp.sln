@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TelcoProyectoWebSite", "TelcoProyectoWebSite\", "{DA00D160-D53A-4F5D-8D7E-A5740313B691}"
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TelcoProyectoWebSite", "TelcoProyectoWebSite", "{DA00D160-D53A-4F5D-8D7E-A5740313B691}"
 	ProjectSection(WebsiteProperties) = preProject
+		Frontpage = "false"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{02351bca-fe5b-4696-8c50-bfc62fc8275a}|BLL.dll;{4D4F5B3D-9114-4932-AEA2-E57DF30AF921}|DAO.dll;{1C8A83FC-75EF-48D7-BAD4-C649E80B3368}|MODELS.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_50575"
 		Debug.AspNetCompiler.PhysicalPath = "TelcoProyectoWebSite\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50575\"
@@ -21,7 +21,6 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TelcoProyectoWebSite", "Tel
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "50575"
-		SlnRelativePath = "TelcoProyectoWebSite\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
