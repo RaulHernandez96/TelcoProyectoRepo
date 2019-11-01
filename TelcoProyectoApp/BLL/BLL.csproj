@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="BLLConsultaCuentaDetalle.cs" />
     <Compile Include="BLLConsultaCuentaEncabezado.cs" />
+    <Compile Include="BLLTransferenciaListadoCuentaPropias.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
