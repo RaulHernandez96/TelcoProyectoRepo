@@ -30,6 +30,7 @@ public partial class security_Default : System.Web.UI.Page
                 Session["permisos_forma"] = dt;
                 Response.Redirect(ResolveUrl("~/" + "Default.aspx"));
 
+
             }
 
          }
