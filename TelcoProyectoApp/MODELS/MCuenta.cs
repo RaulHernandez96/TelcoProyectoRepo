@@ -32,6 +32,7 @@ namespace MODELS {
     public double InteresSobregiroAcumulado { get; set; }
     public DateTime ExpiracionSobregiro { get; set; }
     public double SobregiroDisponible { get; set; }
+    public string NombrePublico { get; set; }
     public List<MMovimientoCuenta> MovimientosCuenta { get; set; }
     public MCuenta() {
       NumeroCuenta = "#N/A#";
@@ -97,6 +98,9 @@ namespace MODELS {
       ExpiracionSobregiro = _dtExpiracionSobregiro;
       SobregiroDisponible = _doSobregiroDisponible;
       MovimientosCuenta = _liMovimientosCuenta;
+    }
+    public void GenerarNombresPublicos() {
+      NombrePublico = $"[{TipoCuenta}] {NumeroCuenta} [{TipoMoneda}] [{Propietario}]";
     }
   }
 }
