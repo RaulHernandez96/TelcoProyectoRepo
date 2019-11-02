@@ -1,0 +1,5 @@
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\DAO\bin\Release\DAO.dll
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\DAO\bin\Release\DAO.pdb
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\DAO\obj\Release\DAO.csprojAssemblyReference.cache
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\DAO\obj\Release\DAO.dll
+C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\DAO\obj\Release\DAO.pdb

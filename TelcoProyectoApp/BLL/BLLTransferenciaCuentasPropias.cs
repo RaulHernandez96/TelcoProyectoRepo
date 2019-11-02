@@ -150,5 +150,81 @@ namespace BLL {
         throw ex;
       }
     }
+    public int ConfirmarTransferencia(string _stNumeroTransferencia) {
+      try {
+        DExecute _obExecute = new DExecute();
+        DProcedimiento _obProcedimiento = new DProcedimiento {
+          NombreProcedimiento = "dbo.PRC_CONFIRMA_TRANSFERENCIA",
+          Parametros = new List<DParametro> {
+          new DParametro {
+            Nombre = "@NumeroTransferencia",
+            Valor = _stNumeroTransferencia,
+            Tipo = DbType.String
+          }
+        }
+        };
+        _obExecute.abrirConexion();
+        DataTable _dtResultadoInsert = _obExecute.Consultar(_obProcedimiento);
+        _obExecute.cerrarConexion();
+        if (_dtResultadoInsert.Rows.Count > 0) {
+          int _inResultadoInsert = 0;
+          string _stResultadoInsert = "";
+          foreach (DataRow _drResultadoInsert in _dtResultadoInsert.Rows) {
+            _inResultadoInsert = Convert.ToInt32(_drResultadoInsert["CodigoResultado"].ToString());
+            _stResultadoInsert = _drResultadoInsert["MensajeResultado"].ToString();
+          }
+          if (_inResultadoInsert != 0) {
+            throw new Exception($"{_stResultadoInsert} [{_inResultadoInsert}]");
+          }
+          else {
+            return _inResultadoInsert;
+          }
+        }
+        else {
+          return 5;
+        }
+      }
+      catch (Exception ex) {
+        throw ex;
+      }
+    }
+    public int CancelaTransferencia(string _stNumeroTransferencia) {
+      try {
+        DExecute _obExecute = new DExecute();
+        DProcedimiento _obProcedimiento = new DProcedimiento {
+          NombreProcedimiento = "dbo.PRC_CANCELAR_TRANSFERENCIA",
+          Parametros = new List<DParametro> {
+          new DParametro {
+            Nombre = "@NumeroTransferencia",
+            Valor = _stNumeroTransferencia,
+            Tipo = DbType.String
+          }
+        }
+        };
+        _obExecute.abrirConexion();
+        DataTable _dtResultadoInsert = _obExecute.Consultar(_obProcedimiento);
+        _obExecute.cerrarConexion();
+        if (_dtResultadoInsert.Rows.Count > 0) {
+          int _inResultadoInsert = 0;
+          string _stResultadoInsert = "";
+          foreach (DataRow _drResultadoInsert in _dtResultadoInsert.Rows) {
+            _inResultadoInsert = Convert.ToInt32(_drResultadoInsert["CodigoResultado"].ToString());
+            _stResultadoInsert = _drResultadoInsert["MensajeResultado"].ToString();
+          }
+          if (_inResultadoInsert != 0) {
+            throw new Exception($"{_stResultadoInsert} [{_inResultadoInsert}]");
+          }
+          else {
+            return _inResultadoInsert;
+          }
+        }
+        else {
+          return 5;
+        }
+      }
+      catch (Exception ex) {
+        throw ex;
+      }
+    }
   }
 }

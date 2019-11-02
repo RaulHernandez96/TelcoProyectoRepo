@@ -9,8 +9,3 @@ C:\Users\Velasquez\Source\Repos\telcom1\TelcoProyectoApp\MODELS\obj\Debug\MODELS
 C:\Users\Velasquez\Source\Repos\telcom1\TelcoProyectoApp\MODELS\obj\Debug\MODELS.csproj.CoreCompileInputs.cache
 C:\Users\Velasquez\Source\Repos\telcom1\TelcoProyectoApp\MODELS\obj\Debug\MODELS.dll
 C:\Users\Velasquez\Source\Repos\telcom1\TelcoProyectoApp\MODELS\obj\Debug\MODELS.pdb
-C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\MODELS\bin\Debug\MODELS.dll
-C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\MODELS\bin\Debug\MODELS.pdb
-C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\MODELS\obj\Debug\MODELS.csprojAssemblyReference.cache
-C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\MODELS\obj\Debug\MODELS.dll
-C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\MODELS\obj\Debug\MODELS.pdb
