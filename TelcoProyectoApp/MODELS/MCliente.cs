@@ -34,5 +34,7 @@ namespace MODELS
         public bool trabajaPareja { get; set; }
         public string trabajoPareja { get; set; }
         public string descripcion { get; set; }
+        public double ingresosMensuales { get; set; }
+        public double otrosIngresos { get; set; }
     }
 }

@@ -10,6 +10,7 @@ using System.Data;
 public partial class security_Default : System.Web.UI.Page
 {
     private DataTable dt;
+    private BLLLogin objBLLLogin;
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -24,6 +25,8 @@ public partial class security_Default : System.Web.UI.Page
          //   MLogin objLogin = null;
             if(dt.Rows.Count>0)
             {
+                objBLLLogin = new BLLLogin();
+                Session["atributos_usuario"] = objBLLLogin.atributosUsuario(Convert.ToInt32(dt.Rows[0]["id_usuario"].ToString()));
                 Session["permisos_forma"] = dt;
                 Response.Redirect(ResolveUrl("~/" + "Default.aspx"));
             }
