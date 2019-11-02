@@ -67,6 +67,11 @@
                         <div class="form-group">
                             <asp:Button ID="Button1" CssClass="btn btn-primary col-xs-12" runat="server" Text="Crear Solicitud" OnClick="btnInsertar_Click" />
                         </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <asp:Label ID="_lbMensajeUsuario" runat="server"></asp:Label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
