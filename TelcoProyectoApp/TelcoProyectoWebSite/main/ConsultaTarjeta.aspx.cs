@@ -43,21 +43,23 @@ public partial class main_ConsultaTarjeta : System.Web.UI.Page
                     lbInteresTarjeta.Text = InfoCuenta["monto_interes_tarjeta"].ToString();
                     //lbProveedorTarjet.Text = InfoCuenta["id_proveedor_tarjeta"].ToString();
                     lbLimite.Text = InfoCuenta["maximo_credito"].ToString();
-                    lbFechaPago.Text = InfoCuenta["fecha_pago"].ToString();
+                    lbFechaPago.Text =DateTime.Parse( InfoCuenta["fecha_pago"].ToString()).ToString("dd-MM-yyyy");
                     lbFechaCorte.Text =DateTime.Parse( InfoCuenta["fecha_corte"].ToString()).ToString("dd-MM-yyyy");
-                    lbFechaVencimineto.Text = InfoCuenta["fecha_vencimiento"].ToString();
+                    lbFechaVencimineto.Text =DateTime.Parse( InfoCuenta["fecha_vencimiento"].ToString()).ToString("dd-MM-yyyy");
                     lbEstado.Text = InfoCuenta["descripcion_estado_tarjeta"].ToString();
                 }
             }
 
-            
-            Response.Write("<script>alert('consulta con exito');</script>");
+
+            _lbMensajeUsuario.Text = "Consulta realizada con éxito";
+            _lbMensajeUsuario.CssClass = "text-bold text-info";
         }
         catch (Exception ex)
         {
-            // MessageBox.Show(ex.Message);
-            Response.Write("<script>alert('"+ex.Message+"');</script>");
-            
+            _lbMensajeUsuario.Text = $"Error de ejecución. {ex.Message}";
+            _lbMensajeUsuario.CssClass = "text-bold text-danger";
+
+
 
         }
     }

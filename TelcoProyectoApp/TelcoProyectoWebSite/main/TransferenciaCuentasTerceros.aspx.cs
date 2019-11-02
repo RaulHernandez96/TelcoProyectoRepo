@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class main_TransferenciaCuentasPropias : System.Web.UI.Page {
+public partial class main_TransferenciaCuentasTerceros : System.Web.UI.Page {
   protected BLLTransferenciaListadoCuentaPropias _obTransferenciaListadoCuentaPropias = null;
   protected BLLTransferenciaCuentasPropias _obTransferenciaCuentasPropias = null;
   protected MUsuario _obUsuario = null;
@@ -36,10 +36,6 @@ public partial class main_TransferenciaCuentasPropias : System.Web.UI.Page {
           _dlCuentaOrigen.SelectedValue = Request.QueryString["nc"];
         }
 
-        _dlCuentaDestino.DataSource = _obTransferenciaListadoCuentaPropias._liCuentas;
-        _dlCuentaDestino.DataValueField = "NumeroCuenta";
-        _dlCuentaDestino.DataTextField = "NombrePublico";
-        _dlCuentaDestino.DataBind();
       }
       else if (_inEstadoEjecucion == 5) {
         _lbMensajeUsuario.Text = $"No se encontrason datos, vuelva a ingresar a la opción.";
@@ -61,14 +57,14 @@ public partial class main_TransferenciaCuentasPropias : System.Web.UI.Page {
 
   protected void OnClicValidar(object sender, EventArgs e) {
     try {
-      if (_dlCuentaOrigen.SelectedValue != _dlCuentaDestino.SelectedValue) {
+      if (_dlCuentaOrigen.SelectedValue != _lbCuentaDestino.Text) {
         if (Convert.ToDouble(_txMontoTransferir.Text) > 0) {
           _obTransferenciaCuentasPropias = new BLLTransferenciaCuentasPropias();
           MUsuario _obUsuario = (MUsuario)Session["atributos_usuario"];
           if (_dlCalendarizarProgramas.SelectedValue == "0") {
             MTransferencia _obTransferencia = new MTransferencia {
               CuentaOrigen = _dlCuentaOrigen.SelectedValue,
-              CuentaDestino = _dlCuentaDestino.SelectedValue,
+              CuentaDestino = _lbCuentaDestino.Text,
               MontoTransferencia = Convert.ToDouble(_txMontoTransferir.Text),
               DescripcionTransferencia = _txDescripcionTrasnferir.Text,
               Calendarizado = false,
@@ -104,7 +100,7 @@ public partial class main_TransferenciaCuentasPropias : System.Web.UI.Page {
                         _obTransferenciaCuentasPropias = new BLLTransferenciaCuentasPropias();
                         MTransferencia _obTransferencia = new MTransferencia {
                           CuentaOrigen = _dlCuentaOrigen.SelectedValue,
-                          CuentaDestino = _dlCuentaDestino.SelectedValue,
+                          CuentaDestino = _lbCuentaDestino.Text,
                           MontoTransferencia = Convert.ToDouble(_txMontoTransferir.Text),
                           DescripcionTransferencia = _txDescripcionTrasnferir.Text,
                           Calendarizado = true,
@@ -168,7 +164,7 @@ public partial class main_TransferenciaCuentasPropias : System.Web.UI.Page {
                   _obTransferenciaCuentasPropias = new BLLTransferenciaCuentasPropias();
                   MTransferencia _obTransferencia = new MTransferencia {
                     CuentaOrigen = _dlCuentaOrigen.SelectedValue,
-                    CuentaDestino = _dlCuentaDestino.SelectedValue,
+                    CuentaDestino = _lbCuentaDestino.Text,
                     MontoTransferencia = Convert.ToDouble(_txMontoTransferir.Text),
                     DescripcionTransferencia = _txDescripcionTrasnferir.Text,
                     Calendarizado = false,

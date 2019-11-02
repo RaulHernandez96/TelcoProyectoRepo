@@ -78,11 +78,13 @@ public partial class main_Wsolicitud_prestamo : System.Web.UI.Page
             objMSolicitudPrestamo.historialCompras = txtHistorial_compras.Text;
             objMSolicitudPrestamo.proyeccionPago = txtProyeccion.Text;
             bLLSolicitudPrestamo.insertaSolicitud(objMSolicitudPrestamo);
-            Response.Write("<script>alert('Solcitud registrada');</script>");
+            _lbMensajeUsuario.Text = "solicitdud ingresada ";
+            _lbMensajeUsuario.CssClass = "text-bold text-info";
         }
         catch(Exception ex)
         {
-            Response.Write("<script>alert('Estamos experimentando problemas');</script>");
+            _lbMensajeUsuario.Text = $"Error de ejecución. {ex.Message}";
+            _lbMensajeUsuario.CssClass = "text-bold text-danger";
         }
                          
     }
