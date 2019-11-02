@@ -12,6 +12,9 @@ public partial class _Default : System.Web.UI.Page
   protected MUsuario objMUsuario = new MUsuario();
   protected void Page_Load(object sender, EventArgs e)
   {
+    if(Session["atributos_usuario"] == null) {
+      Response.Redirect("/security/InicioSesion.aspx");
+    }
     objMUsuario = (MUsuario)Session["atributos_usuario"];
     _lbMensajeUsuario.Text = "";
     _lbMensajeUsuario.CssClass = "";

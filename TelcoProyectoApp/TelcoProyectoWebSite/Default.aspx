@@ -105,7 +105,7 @@
                     </div>
                     <div class="row">
                       <div class="col-xs-12">
-                        <asp:HyperLink ID="_hyTransferenciasCuentasTercerosInter" NavigateUrl="main/TransferenciaListadoCuentaInterBanco.aspx" runat="server">
+                        <asp:HyperLink ID="_hyTransferenciasCuentasTercerosInter" NavigateUrl="ach/transferenciaACH.aspx" runat="server">
                           <i class="fa fa-arrow-circle-right"></i> Transferencia a cuenta de terceros (inter bancaria)
                         </asp:HyperLink>
                       </div>

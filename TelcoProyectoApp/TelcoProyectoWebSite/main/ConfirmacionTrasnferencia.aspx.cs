@@ -43,20 +43,20 @@ public partial class main_ConfirmacionTrasnferencia : System.Web.UI.Page {
                 ? _obConsultaCuentaEncabezadoOrigen.Cuenta != null
                 ? _obConsultaCuentaEncabezadoOrigen.Cuenta.Propietario : "#N/A#" : "#N/A#");
 
-              _lbTipoCuentaDestino.Text = _obConsultaCuentaEncabezadoOrigen != null
-                ? _obConsultaCuentaEncabezadoOrigen.Cuenta != null
-                ? _obConsultaCuentaEncabezadoOrigen.Cuenta.TipoCuenta : "#N/A#" : "#N/A#";
+              _lbTipoCuentaDestino.Text = _obConsultaCuentaEncabezadoDestino != null
+                ? _obConsultaCuentaEncabezadoDestino.Cuenta != null
+                ? _obConsultaCuentaEncabezadoDestino.Cuenta.TipoCuenta : "#N/A#" : "#N/A#";
 
-              _lbTipoMonedaDestino.Text = _obConsultaCuentaEncabezadoOrigen != null
-                ? _obConsultaCuentaEncabezadoOrigen.Cuenta != null
-                ? _obConsultaCuentaEncabezadoOrigen.Cuenta.TipoMoneda : "#N/A#" : "#N/A#";
+              _lbTipoMonedaDestino.Text = _obConsultaCuentaEncabezadoDestino != null
+                ? _obConsultaCuentaEncabezadoDestino.Cuenta != null
+                ? _obConsultaCuentaEncabezadoDestino.Cuenta.TipoMoneda : "#N/A#" : "#N/A#";
 
-              _lbInformacionCuentaDestino.Text = (_obConsultaCuentaEncabezadoOrigen != null
-                ? _obConsultaCuentaEncabezadoOrigen.Cuenta != null
-                ? _obConsultaCuentaEncabezadoOrigen.Cuenta.NumeroCuenta : "#N/A#" : "#N/A#") + "<br>" +
+              _lbInformacionCuentaDestino.Text = (_obConsultaCuentaEncabezadoDestino != null
+                ? _obConsultaCuentaEncabezadoDestino.Cuenta != null
+                ? _obConsultaCuentaEncabezadoDestino.Cuenta.NumeroCuenta : "#N/A#" : "#N/A#") + "<br>" +
                 (_obConsultaCuentaEncabezadoOrigen != null
-                ? _obConsultaCuentaEncabezadoOrigen.Cuenta != null
-                ? _obConsultaCuentaEncabezadoOrigen.Cuenta.Propietario : "#N/A#" : "#N/A#");
+                ? _obConsultaCuentaEncabezadoDestino.Cuenta != null
+                ? _obConsultaCuentaEncabezadoDestino.Cuenta.Propietario : "#N/A#" : "#N/A#");
 
               _lbMontoTrasnferencia.Text = _obTransferenciaCuentasPropias != null
                 ? _obTransferenciaCuentasPropias.Transferencia != null

@@ -68,9 +68,7 @@
                         </li>
                         <!-- Control Sidebar Toggle Button -->
                         <li>
-                          <asp:HyperLink ID="_hyCerrarSesion" runat="server">
-                            <i class="fa fa-sign-out"></i>
-                          </asp:HyperLink>
+                            <a href="/security/InicioSesion.aspx"><i class="fa fa-sign-out"></i></a>
                         </li>
                     </ul>
                 </div>
