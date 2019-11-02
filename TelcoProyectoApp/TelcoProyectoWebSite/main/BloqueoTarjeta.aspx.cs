@@ -85,15 +85,16 @@ public partial class main_BloqueoTarjeta : System.Web.UI.Page
             lbCliente.Text = "";
             lbNumeroTarjeta.Text ="";
 
-                Response.Write("<script>alert('Bloqueo con exito');</script>");
+            _lbMensajeUsuario.Text = "Bloqueo realizado con exito";
+            _lbMensajeUsuario.CssClass = "text-bold text-info";
             txtNumeroTarjeta.Text = "";
 
 
         }
         catch (Exception ex)
         {
-            // MessageBox.Show(ex.Message);
-            Response.Write("<script>alert('" + ex.Message + "');</script>");
+            _lbMensajeUsuario.Text = $"Error de ejecución. {ex.Message}";
+            _lbMensajeUsuario.CssClass = "text-bold text-danger";
 
 
         }

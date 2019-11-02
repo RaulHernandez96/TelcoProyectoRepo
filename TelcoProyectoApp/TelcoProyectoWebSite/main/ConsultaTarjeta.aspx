@@ -73,15 +73,7 @@
                       <div class="col-xs-8">
                         <asp:Label ID="lbInteresTarjeta" runat="server"></asp:Label>
                       </div>
-                    </div>
-                      <div class="row">
-                      <div class="col-xs-4">
-                        <span>Proveedor de la tarjeta:</span>
-                      </div>
-                      <div class="col-xs-8">
-                        <asp:Label ID="lbProveedorTarjet" runat="server"></asp:Label>
-                      </div>
-                    </div>
+                    </div>                    
                       <div class="row">
                       <div class="col-xs-4">
                         <span>Limite de credito:</span>
