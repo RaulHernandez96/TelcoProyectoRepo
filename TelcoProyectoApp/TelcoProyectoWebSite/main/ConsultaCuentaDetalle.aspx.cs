@@ -10,6 +10,7 @@ public partial class main_ConsultaCuentaDetalle : System.Web.UI.Page {
     _lbMensajeUsuario.CssClass = "";
     if(_txFechaBusqueda.Text == "") {
       _txFechaBusqueda.Text = DateTime.Now.ToString("MM/yyyy");
+      _txFechaBusqueda.Attributes["data-value"] = DateTime.Now.ToString("MM/yyyy");
     }
     if (!IsPostBack) {
       string[] _vrPeriodoBusqueda = _txFechaBusqueda.Text.Split('/');

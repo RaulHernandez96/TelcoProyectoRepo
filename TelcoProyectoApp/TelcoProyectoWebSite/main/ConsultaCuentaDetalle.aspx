@@ -60,7 +60,8 @@
                 <label for="<%= _txFechaBusqueda.ClientID %>">Fecha para la busqueda:</label>
               </div>
               <div class="col-xs-12 col-lg-2">
-                <asp:TextBox ID="_txFechaBusqueda" CssClass="form-control input-sm text-center" runat="server"></asp:TextBox>
+                <asp:TextBox ID="_txFechaBusqueda" data-value="" 
+                  CssClass="form-control input-sm text-center" runat="server"></asp:TextBox>
               </div>
               <div class="col-xs-12 col-lg-2">
                 <asp:Button ID="_btBuscarDetalle" CssClass="btn btn-primary col-xs-12 input-sm" Text="Buscar detalle" runat="server" OnClick="OnClicBuscarMovimiento" />
@@ -141,22 +142,113 @@
   <%-- Fin sección principal --%>
   <%-- Script --%>
   <script>
-    <%= _txFechaBusqueda.ClientID %>.onkeydown = function (even) {
-      console.log(this.value);
-      console.log(event.keyCode);
+    <%= _txFechaBusqueda.ClientID %>.onkeydown = function (event) {
       var _inValorKey = event.keyCode;
-      var _stValorInput = this.value;
+      var _stValorInput = this.getAttribute("data-value");
+      if (this.value.length == 0) {
+        this.value = "__/____";
+      }
+      if (event.key >= '0' && event.key <= '9') {
+        _inValorKey -= 48;
+      }
       if ((_inValorKey >= 48 && _inValorKey <= 57) || (_inValorKey >= 96 && _inValorKey <= 105) ) {
         if (_stValorInput.length == 0) {
-          this.value = String.fromCharCode(_inValorKey) + "__/____";
-          even.preventDefault();
+          _stValorInput = _stValorInput + String.fromCharCode(_inValorKey);
+          this.setAttribute("data-value", _stValorInput);
+          this.value = _stValorInput + "_/____";
+          event.preventDefault();
           return;
         }
         else if (_stValorInput.length == 1) {
-          this.value = "_/____";
+          _stValorInput = _stValorInput + String.fromCharCode(_inValorKey);
+          this.setAttribute("data-value", _stValorInput);
+          this.value = _stValorInput + "/____";
+          event.preventDefault();
+          return;
+        }
+        else if (_stValorInput.length == 2) {
+          _stValorInput = _stValorInput + "/" + String.fromCharCode(_inValorKey);
+          this.setAttribute("data-value", _stValorInput);
+          this.setAttribute("data-value", _stValorInput);
+          this.value = _stValorInput + "___";
+          event.preventDefault();
+          return;
+        }
+        else if (_stValorInput.length == 3) {
+          _stValorInput = _stValorInput + String.fromCharCode(_inValorKey);
+          this.setAttribute("data-value", _stValorInput);
+          this.value = _stValorInput + "___";
+          event.preventDefault();
+          return;
+        }
+        else if (_stValorInput.length == 4) {
+          _stValorInput = _stValorInput + String.fromCharCode(_inValorKey);
+          this.setAttribute("data-value", _stValorInput);
+          this.value = _stValorInput + "__";
+          event.preventDefault();
+          return;
+        }
+        else if (_stValorInput.length == 5) {
+          _stValorInput = _stValorInput + String.fromCharCode(_inValorKey);
+          this.setAttribute("data-value", _stValorInput);
+          this.value = _stValorInput + "_";
+          event.preventDefault();
+          return;
+        }
+        else if (_stValorInput.length == 6) {
+          _stValorInput = _stValorInput + String.fromCharCode(_inValorKey);
+          this.setAttribute("data-value", _stValorInput);
+          this.value = _stValorInput;
+          event.preventDefault();
+          return;
+        }
+        else if (_stValorInput.length > 6) {
+          event.preventDefault();
+          return;
         }
       }
-      else if ( _inValorKey == 8 || _inValorKey == 46 || _inValorKey == 37
+      else if (_inValorKey == 8) {
+        var _stValorActualInput = this.getAttribute("data-value");
+        var _stValorNuevoInput;
+        if (_stValorActualInput.substring(_stValorActualInput.length - 1, _stValorActualInput.length) == "/") {
+          _stValorNuevoInput = _stValorActualInput.substring(0, _stValorActualInput.length - 2);
+        }
+        else {
+          _stValorNuevoInput = _stValorActualInput.substring(0, _stValorActualInput.length - 1);
+        }
+        this.setAttribute("data-value", _stValorNuevoInput);
+        if (_stValorNuevoInput.length == 0) {
+          this.value = "__/____";
+        }
+        else if (_stValorNuevoInput.length == 1) {
+          this.value = _stValorNuevoInput + "_/____";
+        }
+        else if (_stValorNuevoInput.length == 2) {
+          this.setAttribute("data-value", _stValorNuevoInput + "/");
+          this.value = _stValorNuevoInput + "/____";
+        }
+        else if (_stValorNuevoInput.length == 3) {
+          this.value = _stValorNuevoInput + "____";
+        }
+        else if (_stValorNuevoInput.length == 4) {
+          this.value = _stValorNuevoInput + "___";
+        }
+        else if (_stValorNuevoInput.length == 5) {
+          this.value = _stValorNuevoInput + "__";
+        }
+        else if (_stValorNuevoInput.length == 6) {
+          this.value = _stValorNuevoInput + "_";
+        }
+        else if (_stValorNuevoInput.length == 7) {
+          this.value = _stValorNuevoInput;
+        }
+        else {
+          this.value = "__/____";
+        }
+        event.preventDefault();
+        return;
+      }
+      else if ( _inValorKey == 46 || _inValorKey == 37
         || _inValorKey == 39 || _inValorKey == 111 || _inValorKey == 9 ) {
 
       }
