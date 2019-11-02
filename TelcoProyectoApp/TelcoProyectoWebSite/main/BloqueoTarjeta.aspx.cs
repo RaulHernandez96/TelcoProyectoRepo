@@ -14,7 +14,7 @@ public partial class main_BloqueoTarjeta : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         
-        ddlBloqueo.Visible = false;
+        
         btnBloquear.Visible = false;
         
 
@@ -59,7 +59,7 @@ public partial class main_BloqueoTarjeta : System.Web.UI.Page
 
         }
         btnBloquear.Visible = true;
-        ddlBloqueo.Visible = true;
+        
     }
 
     protected void bloquear(object sender, EventArgs e)

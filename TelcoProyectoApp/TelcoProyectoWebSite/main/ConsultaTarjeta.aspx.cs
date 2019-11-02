@@ -44,8 +44,8 @@ public partial class main_ConsultaTarjeta : System.Web.UI.Page
                     //lbProveedorTarjet.Text = InfoCuenta["id_proveedor_tarjeta"].ToString();
                     lbLimite.Text = InfoCuenta["maximo_credito"].ToString();
                     lbFechaPago.Text = InfoCuenta["fecha_pago"].ToString();
-                    lbFechaCorte.Text = InfoCuenta["fecha_corte"].ToString();
-                    lbFechaVencimineto.Text =InfoCuenta["fecha_vencimiento"].ToString();
+                    lbFechaCorte.Text =DateTime.Parse( InfoCuenta["fecha_corte"].ToString()).ToString("dd-MM-yyyy");
+                    lbFechaVencimineto.Text = InfoCuenta["fecha_vencimiento"].ToString();
                     lbEstado.Text = InfoCuenta["descripcion_estado_tarjeta"].ToString();
                 }
             }
