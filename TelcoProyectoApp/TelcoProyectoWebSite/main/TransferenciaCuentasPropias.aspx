@@ -104,8 +104,11 @@
                                 <div class="col-xs-4">
                                   <span class="text-bold">Monto a transferir</span><span class="text-bold text-danger">**</span>
                                 </div>
-                                <div class="col-xs-8">
-                                  <asp:TextBox ID="_txMontoTransferir" CssClass="form-control" runat="server"></asp:TextBox>
+                                <div class="col-xs-4">
+                                  <asp:TextBox ID="_txMontoTransferir" CssClass="form-control" runat="server">0.00</asp:TextBox>
+                                </div>
+                                <div class="col-xs-4">
+                                  <span class="text-bold">Quetzales</span>
                                 </div>
                               </div>
                               <div class="row">
@@ -126,6 +129,90 @@
                                 </div>
                               </div>
                               <%-- Fin quinta fila --%>
+                              <br />
+                              <%-- Seccion de calendarización --%>
+                              <div id="_SeccionCalendarizacion">
+                                <%-- Caja de calendarizacion --%>
+                                <div class="row">
+                                  <div class="col-xs-12">
+                                    <div class="box box-default">
+                                      <%-- Encabezado caja --%>
+                                      <div class="box-header with-border">
+                                        <h4 class="box-title">Calendarización</h4>
+                                      </div>
+                                      <%-- Fin encabezado caja --%>
+                                      <%-- Cuerpo caja --%>
+                                      <div class="box-body">
+                                        <div class="row">
+                                          <div class="col-xs-12 col-lg-4">
+                                            <span class="text-bold">Transferir cada</span>
+                                          </div>
+                                          <div class="col-xs-12 col-lg-4">
+                                            <asp:DropDownList ID="_dlPeriodoCalendarizacion" CssClass="form-control" runat="server">
+                                              <asp:ListItem Value="1">1 día</asp:ListItem>
+                                              <asp:ListItem Value="10">15 días</asp:ListItem>
+                                              <asp:ListItem Value="20">1 mes</asp:ListItem>
+                                              <asp:ListItem Value="30">3 meses</asp:ListItem>
+                                              <asp:ListItem Value="40">6 meses</asp:ListItem>
+                                              <asp:ListItem Value="50">1 año</asp:ListItem>
+                                            </asp:DropDownList>
+                                          </div>
+                                        </div>
+                                        <br />
+                                        <div class="row">
+                                          <div class="col-xs-12 col-lg-4">
+                                            <span class="text-bold">Fecha inicio transferencia</span>
+                                          </div>
+                                          <div class="col-xs-12 col-lg-4">
+                                            <asp:TextBox TextMode="Date" ID="_txFechaIncioTransferencia" CssClass="form-control"
+                                              runat="server"></asp:TextBox>
+                                          </div>
+                                        </div>
+                                        <br />
+                                        <div class="row">
+                                          <div class="col-xs-12 col-lg-4">
+                                            <span class="text-bold">Fecha finaliza transferencia</span>
+                                          </div>
+                                          <div class="col-xs-12 col-lg-4">
+                                            <asp:TextBox TextMode="Date" ID="_txFechaFinalizaTransferencia" 
+                                              CssClass="form-control" runat="server"></asp:TextBox>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <%-- Fin cuerpo caja --%>
+                                    </div>
+                                  </div>
+                                </div>
+                                <%-- Fin caja calendarizacion --%>
+                              </div>
+                              <%-- Fin sección de calendarización --%>
+                              <%-- Sección de programación --%>
+                              <div id="_SeccionProgramacion">
+                                <%-- Caja programacion --%>
+                                <div class="row">
+                                  <div class="col-xs-12">
+                                    <div class="box box-default">
+                                      <%-- Encabezado caja --%>
+                                      <div class="box-header with-border">
+                                        <h4 class="box-title">Programación</h4>
+                                      </div>
+                                      <%-- Fin encabezado caja --%>
+                                      <%-- Cuerpo caja --%>
+                                      <div class="box-body">
+                                        <div class="col-xs-12 col-lg-4">
+                                          <span class="text-bold">Fecha para realizar la transferencia</span>
+                                        </div>
+                                        <div class="col-xs-12 col-lg-4">
+                                          <asp:TextBox TextMode="Date" ID="_txFechaProgramacion" CssClass="form-control" runat="server"></asp:TextBox>
+                                        </div>
+                                      </div>
+                                      <%-- Fin cuerpo caja --%>
+                                    </div>
+                                  </div>
+                                </div>
+                                <%-- Fin caja programacion --%>
+                              </div>
+                              <%-- Fin sección programación --%>
                             </div>
                             <%-- Fin cuerpo caja --%>
                             <%-- Pie de caja --%>
@@ -133,7 +220,7 @@
                               <div class="row">
                                 <div class="col-xs-12 col-lg-2">
                                   <asp:Button ID="_btValidarTransferencia" Text="Validar" 
-                                    CssClass="btn btn-primary col-xs-12" runat="server" />
+                                    CssClass="btn btn-primary col-xs-12" runat="server" OnClick="OnClicValidar" />
                                 </div>
                               </div>
                               <div class="row">
@@ -173,6 +260,77 @@
         <%-- Fin caja principal --%>
       </div>
     </div>
+    <script>
+      $(document).ready(() => {
+        let _obCalendariazacionProgramacion = $("#<%= _dlCalendarizarProgramas.ClientID %>");
+        let _obHtmlCalendarizacion = $("#_SeccionCalendarizacion");
+        let _obHtmlProgramacion = $("#_SeccionProgramacion");
+        if (_obCalendariazacionProgramacion.val() == 0) {
+          _obHtmlCalendarizacion.css({
+            "display": "none"
+          });
+          _obHtmlProgramacion.css({
+            "display": "none"
+          });
+        }
+        else if (_obCalendariazacionProgramacion.val() == 1) {
+          _obHtmlProgramacion.css({
+            "display": "none"
+          });
+        }
+        else if (_obCalendariazacionProgramacion.val() == 2) {
+          _obHtmlCalendarizacion.css({
+            "display": "none"
+          });
+        }
+        else {
+          _obHtmlCalendarizacion.css({
+            "display": "none"
+          });
+          _obHtmlProgramacion.css({
+            "display": "none"
+          });
+        }
+
+        _obCalendariazacionProgramacion.change((e) => {
+          if (_obCalendariazacionProgramacion.val() == 0) {
+            _obHtmlCalendarizacion.css({
+              "display": "none"
+            });
+            _obHtmlProgramacion.css({
+              "display": "none"
+            });
+          }
+          else if (_obCalendariazacionProgramacion.val() == 1) {
+            _obHtmlCalendarizacion.css({
+              "display": "block"
+            });
+            _obHtmlProgramacion.css({
+              "display": "none"
+            })
+          }
+          else if (_obCalendariazacionProgramacion.val() == 2) {
+            _obHtmlCalendarizacion.css({
+              "display": "none"
+            })
+            _obHtmlProgramacion.css({
+              "display": "block"
+            })
+          }
+          else {
+            _obHtmlCalendarizacion.css({
+              "display": "none"
+            });
+            _obHtmlProgramacion.css({
+              "display": "none"
+            });
+          }
+        });
+
+      });
+
+      
+    </script>
   </section>
   <%-- Fin cuerpo contenido --%>
 </asp:Content>
