@@ -43,6 +43,7 @@
     <Compile Include="CLASEPRUEBA.cs" />
     <Compile Include="MCliente.cs" />
     <Compile Include="MCuenta.cs" />
+    <Compile Include="MCuentaIban.cs" />
     <Compile Include="MLogin.cs" />
     <Compile Include="MMovimientoCuenta.cs" />
     <Compile Include="MSolicitudExtraFinan.cs" />
@@ -50,6 +51,7 @@
     <Compile Include="MSolicitudTarjetaCredito.cs" />
     <Compile Include="MTarjeta.cs" />
     <Compile Include="MTransferencia.cs" />
+    <Compile Include="MTransferenciaACH.cs" />
     <Compile Include="MUsuario.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />

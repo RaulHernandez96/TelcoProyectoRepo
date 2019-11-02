@@ -1,12 +1,3 @@
-C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\BLL\bin\Debug\BLL.dll
-C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\BLL\bin\Debug\BLL.pdb
-C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\BLL\bin\Debug\DAO.dll
-C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\BLL\bin\Debug\MODELS.dll
-C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\BLL\bin\Debug\DAO.pdb
-C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\BLL\bin\Debug\MODELS.pdb
-C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
-C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\BLL\obj\Debug\BLL.dll
-C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\BLL\obj\Debug\BLL.pdb
 C:\Users\Velasquez\Source\Repos\telcom1\TelcoProyectoApp\BLL\bin\Debug\BLL.dll
 C:\Users\Velasquez\Source\Repos\telcom1\TelcoProyectoApp\BLL\bin\Debug\BLL.pdb
 C:\Users\Velasquez\Source\Repos\telcom1\TelcoProyectoApp\BLL\bin\Debug\DAO.dll
@@ -28,3 +19,12 @@ C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyec
 C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\BLL\obj\Debug\BLL.dll
 C:\Users\raulhernandez\Desktop\TelcoProyectoFinale\TelcoProyectoRepo\TelcoProyectoApp\BLL\obj\Debug\BLL.pdb
+C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\BLL\bin\Debug\BLL.dll
+C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\BLL\bin\Debug\BLL.pdb
+C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\BLL\bin\Debug\DAO.dll
+C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\BLL\bin\Debug\MODELS.dll
+C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\BLL\bin\Debug\DAO.pdb
+C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\BLL\bin\Debug\MODELS.pdb
+C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\BLL\obj\Debug\BLL.dll
+C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\BLL\obj\Debug\BLL.pdb
