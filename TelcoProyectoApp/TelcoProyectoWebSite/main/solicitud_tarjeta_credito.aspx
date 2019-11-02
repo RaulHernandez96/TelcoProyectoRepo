@@ -19,9 +19,12 @@
             <asp:Label ID="Label3" runat="server" Text="Tipo de credito"></asp:Label>
             <asp:TextBox ID="txtTipo_credito" runat="server"></asp:TextBox>
             <br />
+            <asp:Label ID="Label8" runat="server" Text="Tipo tarjeta"></asp:Label>
+            <asp:TextBox ID="txtTipo_tarjeta" runat="server"></asp:TextBox>
+            <br />
             <asp:Label ID="Label4" runat="server" Text="Tipo_entrega"></asp:Label>
             <asp:TextBox ID="txtTipo_entrega" runat="server"></asp:TextBox>
-            <br />
+            <br />     
             <asp:Label ID="Label5" runat="server" Text="Tipo desembolso"></asp:Label>
             <asp:TextBox ID="txtTipo_desembolso" runat="server"></asp:TextBox>
             <br />
