@@ -82,6 +82,11 @@
                                                 <asp:Button ID="btnAgregar" runat="server" CssClass="btn btn-default" Text="Realizar transferencia" OnClick="btnAgregar_Click" />
                                             </div>
                                         </div>
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <asp:Label ID="lblMsj" runat="server" Text=""></asp:Label>
+                                            </div>
+                                        </div>
                                         <br />
                                     </div>
                                 </div>
