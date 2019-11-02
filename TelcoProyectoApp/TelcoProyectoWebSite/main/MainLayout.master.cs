@@ -17,6 +17,7 @@ public partial class main_MainLayout : System.Web.UI.MasterPage
         string vOpciones = string.Empty;
         string vMenu = string.Empty;
         int vContador = 0;
+
         literalMenu.Text = string.Empty;
         foreach (DataRow dtRow in dt.Rows)
         {
