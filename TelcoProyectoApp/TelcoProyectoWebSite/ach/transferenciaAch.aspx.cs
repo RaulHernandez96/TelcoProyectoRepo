@@ -44,7 +44,7 @@ public partial class ach_transferenciaAch : System.Web.UI.Page
         objMTransAch.monto = Convert.ToDouble(txtMonto.Text);
         objMTransAch.descripcion = txtDescripcion.Text;
 
-        objBLLAch.transferenciaAch(objMTransAch);
+        lblMsj.Text = objBLLAch.transferenciaAch(objMTransAch).Rows[0][0].ToString();
 
     }
 }
