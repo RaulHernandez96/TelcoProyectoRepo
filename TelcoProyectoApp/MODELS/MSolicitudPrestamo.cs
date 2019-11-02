@@ -9,8 +9,7 @@ namespace MODELS
     public class MSolicitudPrestamo
     {
         public int idFinanciera { get; set; }
-        public string dpiCliente { get; set; }
-        public int idTipoCliente { get; set; }
+        public int dpiCliente { get; set; }
         public int idTipoEntrega { get; set; }
         public int idTipoDesembolso { get; set; }
         public double capital { get; set; }
@@ -20,5 +19,8 @@ namespace MODELS
         public string historialCompras { get; set; }
         public int estadoAutorizacion { get; set; }
         public string fecha { get; set; }
+        public int idTipoCredito { get; set; }
+        public string proyeccionPago { get; set; }
+
     }
 }
