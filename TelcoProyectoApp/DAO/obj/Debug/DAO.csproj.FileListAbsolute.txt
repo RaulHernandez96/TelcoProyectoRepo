@@ -3,3 +3,9 @@ C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\DAO\bin\Debug\DAO.pdb
 C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
 C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\DAO\obj\Debug\DAO.dll
 C:\Users\HP\Documents\ProyectoTelecomBan\TelcoProyectoApp\DAO\obj\Debug\DAO.pdb
+C:\Users\Velasquez\Source\Repos\telcom1\TelcoProyectoApp\DAO\bin\Debug\DAO.dll
+C:\Users\Velasquez\Source\Repos\telcom1\TelcoProyectoApp\DAO\bin\Debug\DAO.pdb
+C:\Users\Velasquez\Source\Repos\telcom1\TelcoProyectoApp\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+C:\Users\Velasquez\Source\Repos\telcom1\TelcoProyectoApp\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\Velasquez\Source\Repos\telcom1\TelcoProyectoApp\DAO\obj\Debug\DAO.dll
+C:\Users\Velasquez\Source\Repos\telcom1\TelcoProyectoApp\DAO\obj\Debug\DAO.pdb

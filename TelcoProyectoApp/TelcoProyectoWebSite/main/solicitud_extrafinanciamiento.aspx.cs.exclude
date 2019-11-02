@@ -28,10 +28,10 @@ public partial class main_solicitud_extrafinanciamiento : System.Web.UI.Page
         sqlcomm.Parameters.AddWithValue("@pIdTipoDesembolso", txtdesembolso.Text.Trim());
         sqlcomm.Parameters.AddWithValue("@pMonto", txtMonto.Text.Trim());
         sqlcomm.Parameters.AddWithValue("@pEstado", txtestado.Text.Trim());
-        sqlcomm.Parameters.AddWithValue("@pGaranti", txtGarantia.Text.Trim());
+       // sqlcomm.Parameters.AddWithValue("@pGaranti", txtGarantia.Text.Trim());
         sqlcomm.ExecuteNonQuery();
         conn.Close();
-        if (int.Parse(txtid_financiera.Text.Trim()) == 0)
+        if (int.Parse(txtfinanciera.Text.Trim()) == 0)
         {
             string script = "alert(\"Solicitud Creada correctamente\");";
             ScriptManager.RegisterStartupScript(this, GetType(),

@@ -10,13 +10,13 @@ public partial class main_MainLayout : System.Web.UI.MasterPage
 {
   protected void Page_Load(object sender, EventArgs e)
   {
-        //DataTable dt = (DataTable)Session["permisos_forma"];
+        DataTable dt = (DataTable)Session["permisos_forma"];
 
-        //foreach (DataRow dtRow in dt.Rows)
-        //{
+     /*   foreach (DataRow dtRow in dt.Rows)
+        {
 
-        //    literalMenu.Text += "<li><a href = "+ ResolveUrl("~/" + dtRow["nombre_forma"].ToString() )+ "><i class='fa fa-calendar'></i><span>" + dtRow["descripcion"] + "</span><span class='pull-right-container'><small class='label pull-right bg-red'>3</small><small class='label pull-right bg-blue'>17</small></span></a></li>";
-        //}
-
+            literalMenu.Text += "<li><a href = "+ ResolveUrl("~/" + dtRow["nombre_forma"].ToString() )+ "><i class='fa fa-calendar'></i><span>" + dtRow["descripcion"] + "</span><span class='pull-right-container'><small class='label pull-right bg-red'>3</small><small class='label pull-right bg-blue'>17</small></span></a></li>";
+        }
+    */
   }
 }
