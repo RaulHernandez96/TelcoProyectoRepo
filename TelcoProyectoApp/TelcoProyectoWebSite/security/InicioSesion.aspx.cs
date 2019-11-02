@@ -29,6 +29,7 @@ public partial class security_Default : System.Web.UI.Page
                 Session["atributos_usuario"] = objBLLLogin.atributosUsuario(Convert.ToInt32(dt.Rows[0]["id_usuario"].ToString()));
                 Session["permisos_forma"] = dt;
                 Response.Redirect(ResolveUrl("~/" + "Default.aspx"));
+
             }
 
          }
